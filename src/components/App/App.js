@@ -12,29 +12,27 @@ import { AuthLayout } from "../Layouts/AuthLayout/AuthLayout";
 import { SignIn } from "../../pages/SignIn/SignIn";
 import { SignUp } from "../../pages/SignUp/SignUp";
 import { Global } from "@emotion/react";
-import { Container, GlobalStyles } from "../../GlobalStyles";
+import { GlobalStyles } from "../../GlobalStyles";
 
 export const App = () => {
   return (
     <>
       <Global styles={GlobalStyles} />
-      <Container>
-        <Routes>
-          <Route path="*" element={<NotFound />} />
-          <Route path="/" element={<MainLayout />}>
-            <Route index element={<Home />} />
-            <Route path="booking" element={<Booking />} />
-            <Route path="aboutUs" element={<AboutUs />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="carRental" element={<CarRental />} />
-            <Route path="products" element={<Products />} />
-          </Route>
-          <Route element={<AuthLayout />}>
-            <Route path="/signIn" element={<SignIn />} />
-            <Route path="/signUp" element={<SignUp />} />
-          </Route>
-        </Routes>
-      </Container>
+      <Routes>
+        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home />} />
+          <Route path="booking" element={<Booking />} />
+          <Route path="aboutUs" element={<AboutUs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="carRental" element={<CarRental />} />
+          <Route path="products" element={<Products />} />
+        </Route>
+        <Route element={<AuthLayout />}>
+          <Route path="/signIn" element={<SignIn />} />
+          <Route path="/signUp" element={<SignUp />} />
+        </Route>
+      </Routes>
     </>
   );
 };
