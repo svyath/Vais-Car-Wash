@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export const CarRental = () => {
-  return (
-    <div>CarRental</div>
-  )
-}
+  return <div>CarRental</div>;
+};
