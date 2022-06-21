@@ -34,7 +34,7 @@ export const font = {
 
 export const color = {
   white: "#ffffff",
-  mainBg: "0B0F10",
+  mainBg: "#0B0F10",
   footerBg: "#04090B",
   brightRed: "#FF013E",
   grayLight: "#888888",
@@ -136,6 +136,8 @@ export const GlobalStyles = css`
     margin: 0;
     font-family: ${font.roboto};
     font-weight: normal;
+    background-color: ${color.mainBg};
+    color: ${color.white};
   }
   h1,
   h2,
