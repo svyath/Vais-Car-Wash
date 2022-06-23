@@ -37,6 +37,7 @@ export const color = {
   mainBg: "#0B0F10",
   footerBg: "#04090B",
   brightRed: "#FF013E",
+  deepRed: "#FF000F",
   grayLight: "#888888",
   yellowOrange: "#F3B10E",
   blue: "#1DABF2",
