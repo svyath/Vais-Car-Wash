@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import Slider from "react-slick";
-import { color, Container, device, font } from "../../GlobalStyles";
+import { color, Container, device, font, PrimaryBtn } from "../../GlobalStyles";
 
 export const HeaderSection = styled.header`
   width: 100%;
@@ -77,25 +77,12 @@ export const HeaderBody = styled.div`
     margin-bottom: 50px;
   }
 `;
-export const BookNowBtn = styled.button`
-  font-weight: 700;
+export const BookNowBtn = styled(PrimaryBtn)`
   font-size: 16px;
   line-height: 16px;
   padding: 25px 123px;
   text-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
-  text-transform: uppercase;
-  color: ${color.white};
-  background: ${color.brightRed};
   box-shadow: inset 0px -7px 7px ${color.brightRed};
-  border-radius: 10px;
-  border: 0;
-  cursor: pointer;
-  transition: all 0.1s;
-  &:hover {
-    // replace with variable
-    background-color: #a10027;
-    box-shadow: inset 0px -7px 7px #a10027;
-  }
 `;
 
 export const SocialIcons = styled.div`

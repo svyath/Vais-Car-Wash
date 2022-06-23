@@ -161,3 +161,19 @@ export const Container = styled.div`
   padding: 60px;
   margin: 0 auto;
 `;
+
+export const PrimaryBtn = styled.button`
+  font-weight: 700;
+  text-transform: uppercase;
+  color: ${color.white};
+  background: ${color.brightRed};
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s;
+  &:hover {
+    // replace with variable
+    background-color: #a10027;
+    box-shadow: inset 0px -7px 7px #a10027;
+  }
+`;
