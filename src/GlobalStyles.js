@@ -14,8 +14,8 @@ import SFProDisplayRegular from "./assets/fonts/SFProDisplay-Regular.ttf";
 import SFProDisplaySemiBold from "./assets/fonts/SFProDisplay-Semibold.ttf";
 
 export const breakpoint = {
-  mobileS: "374px",
-  mobile: "767px",
+  mobileS: "376px",
+  mobile: "768px",
   tablet: "1024px",
 };
 export const device = {
@@ -37,6 +37,8 @@ export const color = {
   mainBg: "#0B0F10",
   footerBg: "#04090B",
   brightRed: "#FF013E",
+  redHoverOnPrimBtn: "#a10027",
+  deepRed: "#FF000F",
   grayLight: "#888888",
   yellowOrange: "#F3B10E",
   blue: "#1DABF2",
@@ -159,4 +161,26 @@ export const Container = styled.div`
   width: 100%;
   padding: 60px;
   margin: 0 auto;
+  @media screen and (${device.tablet}) {
+    padding: 40px;
+  }
+  @media screen and (${device.mobile}) {
+    padding: 20px;
+  }
+`;
+
+export const PrimaryBtn = styled.button`
+  font-weight: 700;
+  text-transform: uppercase;
+  color: ${color.white};
+  background: ${color.brightRed};
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s;
+  &:hover {
+    // replace with variable
+    background-color: ${color.redHoverOnPrimBtn};
+    box-shadow: inset 0px -7px 7px ${color.redHoverOnPrimBtn};
+  }
 `;
