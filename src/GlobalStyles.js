@@ -159,13 +159,15 @@ export const GlobalStyles = css`
 export const Container = styled.div`
   max-width: 1440px;
   width: 100%;
-  padding: 60px;
+  padding: 0 60px;
   margin: 0 auto;
   @media screen and (${device.tablet}) {
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   @media screen and (${device.mobile}) {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
 

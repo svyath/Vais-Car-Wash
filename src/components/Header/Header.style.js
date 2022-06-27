@@ -35,6 +35,16 @@ export const HeaderContainer = styled(Container)`
   height: 100%;
   width: 100%;
   z-index: 1;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (${device.tablet}) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media screen and (${device.mobileS}) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 `;
 
 export const HeaderInner = styled.div`
