@@ -41,7 +41,7 @@ export const HeaderContainer = styled(Container)`
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  @media screen and (${device.mobileS}) {
+  @media screen and (${device.mobile}) {
     padding-top: 20px;
     padding-bottom: 20px;
   }
