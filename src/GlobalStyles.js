@@ -161,6 +161,12 @@ export const Container = styled.div`
   width: 100%;
   padding: 60px;
   margin: 0 auto;
+  @media screen and (${device.tablet}) {
+    padding: 40px;
+  }
+  @media screen and (${device.mobile}) {
+    padding: 20px;
+  }
 `;
 
 export const PrimaryBtn = styled.button`
