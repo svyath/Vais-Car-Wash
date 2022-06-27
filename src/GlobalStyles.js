@@ -37,6 +37,7 @@ export const color = {
   mainBg: "#0B0F10",
   footerBg: "#04090B",
   brightRed: "#FF013E",
+  redHoverOnPrimBtn: "#a10027",
   deepRed: "#FF000F",
   grayLight: "#888888",
   yellowOrange: "#F3B10E",
@@ -173,7 +174,7 @@ export const PrimaryBtn = styled.button`
   transition: all 0.1s;
   &:hover {
     // replace with variable
-    background-color: #a10027;
-    box-shadow: inset 0px -7px 7px #a10027;
+    background-color: ${color.redHoverOnPrimBtn};
+    box-shadow: inset 0px -7px 7px ${color.redHoverOnPrimBtn};
   }
 `;

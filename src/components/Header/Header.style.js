@@ -115,6 +115,7 @@ export const SliderActionBtn = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
 `;
 export const SlideProgressBar = styled.div`
   width: 200px;
@@ -137,12 +138,14 @@ export const SlideProgressBar = styled.div`
   }
 `;
 export const SliderCurrNumber = styled.div`
-  padding: 0 20px 0 35px;
+  padding: 0 20px 0 20px;
   font-weight: 900;
+  font-size: 20px;
 `;
 export const SliderAmount = styled.div`
-  padding: 0 35px 0 20px;
+  padding: 0 20px 0 20px;
   font-weight: 900;
+  font-size: 20px;
 `;
 
 // slider customizations
