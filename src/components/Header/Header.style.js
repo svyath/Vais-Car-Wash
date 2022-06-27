@@ -53,6 +53,12 @@ export const HeaderContent = styled.div`
 
 export const HeaderBody = styled.div`
   width: 50%;
+  @media screen and (${device.tablet}) {
+    width: 65%;
+  }
+  @media screen and (${device.mobile}) {
+    width: 80%;
+  }
   h1 {
     font-style: normal;
     font-weight: 700;
@@ -60,8 +66,14 @@ export const HeaderBody = styled.div`
     line-height: 100%;
     font-family: ${font.playfairDisplay};
     margin-bottom: 50px;
+    @media screen and (${device.tablet}) {
+      font-size: 60px;
+    }
     @media screen and (${device.mobile}) {
       font-size: 60px;
+    }
+    @media screen and (${device.mobile}) {
+      font-size: 50px;
     }
     span {
       font-weight: 900;
@@ -75,6 +87,15 @@ export const HeaderBody = styled.div`
     font-weight: normal;
     line-height: 28px;
     margin-bottom: 50px;
+    @media screen and (${device.mobile}) {
+      font-size: 18px;
+    }
+    @media screen and (${device.tablet}) and (orientation: landscape) {
+      display: none;
+    }
+    @media screen and (${device.mobile}) and (orientation: landscape) {
+      display: none;
+    }
   }
 `;
 export const BookNowBtn = styled(PrimaryBtn)`
@@ -83,6 +104,9 @@ export const BookNowBtn = styled(PrimaryBtn)`
   padding: 25px 123px;
   text-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px -7px 7px ${color.brightRed};
+  @media screen and (${device.tablet}) {
+    padding: 25px 80px;
+  }
 `;
 
 export const SocialIcons = styled.div`
@@ -116,13 +140,15 @@ export const SliderActionBtn = styled.button`
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+  @media screen and (${device.mobile}) {
+    padding: 5px;
+  }
 `;
 export const SlideProgressBar = styled.div`
   width: 200px;
   height: 4px;
   background: ${color.white};
   position: relative;
-  padding: 0 10px;
   &::after {
     content: "";
     display: block;
@@ -138,14 +164,20 @@ export const SlideProgressBar = styled.div`
   }
 `;
 export const SliderCurrNumber = styled.div`
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
   font-weight: 900;
   font-size: 20px;
+  @media screen and (${device.mobile}) {
+    padding: 0 5px;
+  }
 `;
 export const SliderAmount = styled.div`
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
   font-weight: 900;
   font-size: 20px;
+  @media screen and (${device.mobile}) {
+    padding: 0 5px;
+  }
 `;
 
 // slider customizations

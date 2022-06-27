@@ -14,8 +14,8 @@ import SFProDisplayRegular from "./assets/fonts/SFProDisplay-Regular.ttf";
 import SFProDisplaySemiBold from "./assets/fonts/SFProDisplay-Semibold.ttf";
 
 export const breakpoint = {
-  mobileS: "374px",
-  mobile: "767px",
+  mobileS: "376px",
+  mobile: "768px",
   tablet: "1024px",
 };
 export const device = {
