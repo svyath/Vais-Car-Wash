@@ -27,31 +27,16 @@ import {
   SocialIcons,
   StyledSlider,
 } from "./Header.style";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
+  const initialSlide = 1;
   const progressBarRef = useRef();
   const slider = useRef();
-  const initialSlide = 1;
   const [slideAmount, setSlideAmount] = useState(null);
   const [slideNumber, setSlideNumber] = useState(initialSlide);
   const [progressLenght, setProgressLenght] = useState(0);
-
-  const prevSlide = () => {
-    slider.current.slickPrev();
-  };
-  const nextSlide = () => {
-    slider.current.slickNext();
-  };
-
-  const afterChangeHandler = (currentSlide) => {
-    setSlideNumber(currentSlide + 1);
-  };
-
-  //set data from refs into state
-  useEffect(() => {
-    setProgressLenght(progressBarRef.current.clientWidth);
-    setSlideAmount(slider.current.props.children.length);
-  }, [progressBarRef]);
+  const navigate = useNavigate();
   // slider settings
   const settings = {
     dots: false,
@@ -61,11 +46,26 @@ export const Header = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    afterChange: function (currentSlide) {
+      setSlideNumber(currentSlide + 1);
+    },
   };
+  const prevSlide = () => {
+    slider.current.slickPrev();
+  };
+  const nextSlide = () => {
+    slider.current.slickNext();
+  };
+
+  //set data from refs into state
+  useEffect(() => {
+    setProgressLenght(progressBarRef.current.clientWidth);
+    setSlideAmount(slider.current.props.children.length);
+  }, [progressBarRef]);
 
   return (
     <HeaderSection>
-      <StyledSlider ref={slider} {...settings} afterChange={afterChangeHandler}>
+      <StyledSlider ref={slider} {...settings}>
         <HeaderBg img={headerBg1}></HeaderBg>
         <HeaderBg img={headerBg2}></HeaderBg>
         <HeaderBg img={headerBg3}></HeaderBg>
@@ -83,7 +83,9 @@ export const Header = () => {
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s
               </p>
-              <BookNowBtn type="button">Book now</BookNowBtn>
+              <BookNowBtn type="button" onClick={() => navigate("booking")}>
+                Book now
+              </BookNowBtn>
             </HeaderBody>
             <SocialIcons>
               <a href="/">
