@@ -5,6 +5,10 @@ export const WhoWeAreSection = styled.section``;
 export const WhoWeAreContainer = styled(Container)`
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (${device.mobile}) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 `;
 export const WhoWeAreInner = styled.div`
   display: flex;

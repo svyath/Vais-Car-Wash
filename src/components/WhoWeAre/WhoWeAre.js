@@ -10,7 +10,6 @@ import {
   WhoWeAreText,
   WhoWeAreTitle,
 } from "./WhoWeAre.style";
-
 import founder from "../../assets/svgs/founder.svg";
 import quotation_mark from "../../assets/svgs/quotation_mark.svg";
 
