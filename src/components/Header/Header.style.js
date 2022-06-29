@@ -150,6 +150,9 @@ export const SliderActionBtn = styled.button`
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+  & > img {
+    width: 9.4px;
+  }
   @media screen and (${device.mobile}) {
     padding: 5px;
   }

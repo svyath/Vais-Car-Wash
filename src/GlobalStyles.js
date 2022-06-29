@@ -186,3 +186,17 @@ export const PrimaryBtn = styled.button`
     box-shadow: inset 0px -7px 7px ${color.redHoverOnPrimBtn};
   }
 `;
+export const ActionBtn = styled.button`
+  color: ${color.white};
+  cursor: pointer;
+  transition: all 0.1s;
+  border-radius: 6.64291px;
+  background-color: ${(props) =>
+    props.active ? color.brightRed : "transparent"};
+  border: ${(props) =>
+    props.active ? "0" : `0.664291px solid ${color.white};`};
+  opacity: ${(props) => (props.active ? "1" : "0.5")};
+  &:active {
+    background-color: ${color.redHoverOnPrimBtn};
+  }
+`;
