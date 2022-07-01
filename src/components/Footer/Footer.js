@@ -1,4 +1,7 @@
-import React from "react";
+import Car_Wash_Logo from "../../assets/svgs/Car_Wash_Logo.svg";
+import footer_facebook from "../../assets/svgs/footer_facebook.svg";
+import footer_instagram from "../../assets/svgs/footer_instagram.svg";
+import footer_twitter from "../../assets/svgs/footer_twitter.svg";
 import {
   AddressColumn,
   CarColumn,
@@ -13,15 +16,10 @@ import {
   PageColumn,
   ServicesColumn,
   Title,
-  UnderFooter,
   WashAddress,
   WashEmail,
   WashTel,
 } from "./Footer.style";
-import Car_Wash_Logo from "../../assets/svgs/Car_Wash_Logo.svg";
-import footer_facebook from "../../assets/svgs/footer_facebook.svg";
-import footer_instagram from "../../assets/svgs/footer_instagram.svg";
-import footer_twitter from "../../assets/svgs/footer_twitter.svg";
 
 export const Footer = () => {
   return (
