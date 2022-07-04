@@ -194,7 +194,9 @@ export const ActionBtn = styled.button`
   background-color: ${(props) =>
     props.active ? color.brightRed : "transparent"};
   border: ${(props) =>
-    props.active ? "0" : `0.664291px solid ${color.white};`};
+    props.active
+      ? "0.664291px solid transparent ;"
+      : `0.664291px solid ${color.white};`};
   opacity: ${(props) => (props.active ? "1" : "0.5")};
   &:active {
     background-color: ${color.redHoverOnPrimBtn};

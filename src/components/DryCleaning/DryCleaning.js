@@ -1,5 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
-import Slider from "react-slick";
+import { useRef, useState } from "react";
+import DryCleaningSliderImg1 from "../../assets/images/DryCleaningSliderImg1.jpg";
+import arrow_next_icon from "../../assets/svgs/arrow_next_icon.svg";
+import arrow_prev_icon from "../../assets/svgs/arrow_prev_icon.svg";
 import {
   DryCleaningContainer,
   DryCleaningContent,
@@ -16,9 +18,6 @@ import {
   SliderItemImg,
   ViewMoreBtn,
 } from "./DryCleaning.style";
-import DryCleaningSliderImg1 from "../../assets/images/DryCleaningSliderImg1.jpg";
-import arrow_prev_icon from "../../assets/svgs/arrow_prev_icon.svg";
-import arrow_next_icon from "../../assets/svgs/arrow_next_icon.svg";
 
 export const DryCleaning = () => {
   const slider = useRef();
