@@ -1,7 +1,9 @@
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 import { color, Container, device } from "../../GlobalStyles";
-export const FooterSection = styled.footer``;
+export const FooterSection = styled.footer`
+  background: ${color.footerBg};
+`;
 export const FooterContainer = styled(Container)`
   padding-top: 60px;
   padding-bottom: 70px;
