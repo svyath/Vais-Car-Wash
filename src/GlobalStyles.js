@@ -15,13 +15,17 @@ import SFProDisplaySemiBold from "./assets/fonts/SFProDisplay-Semibold.ttf";
 
 export const breakpoint = {
   mobileS: "376px",
+  mobileM: "480px",
   mobile: "768px",
-  tablet: "1024px",
+  tablet: "992px",
+  laptop: "1200px",
 };
 export const device = {
   mobileS: `max-width: ${breakpoint.mobileS}`,
+  mobileM: `max-width: ${breakpoint.mobileM}`,
   mobile: `max-width: ${breakpoint.mobile}`,
   tablet: `max-width: ${breakpoint.tablet}`,
+  laptop: `max-width: ${breakpoint.laptop}`,
 };
 
 export const font = {
@@ -181,7 +185,6 @@ export const PrimaryBtn = styled.button`
   cursor: pointer;
   transition: all 0.1s;
   &:hover {
-    // replace with variable
     background-color: ${color.redHoverOnPrimBtn};
     box-shadow: inset 0px -7px 7px ${color.redHoverOnPrimBtn};
   }
